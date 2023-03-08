@@ -1,8 +1,11 @@
 {
-  "name": "rakuda-san-desu-palindrome",
+  "name": "rakuda_san_desu_palindrome",
   "version": "0.1.0",
   "description": "Palindrome detector",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "mocha"
   },
@@ -11,9 +14,11 @@
     "url": "git+https://github.com/rakuda-san-desu/js-sample.git"
   },
   "keywords": [
-    "rakudadayo"
+    "palindrome",
+    "learn-enough",
+    "javascript"
   ],
-  "author": "rakuda-san-desu",
+  "author": "rakuda_san_desu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rakuda-san-desu/js-sample/issues"
