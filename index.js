@@ -9,9 +9,16 @@ String.prototype.reverse = function() {
 function Phrase(content) {
   this.content = content;
 
-  // パリンドロームのテスト用に変換した訳文を返す
+   // パリンドロームのテスト用に変換した訳文を返す
   this.processedContent = function processedContent() {
-    return this.content.toLowerCase();
+    return this.letters().toLowerCase();
+  }
+
+  // コンテンツの文字だけを返す
+  // 利用例:
+  //   new Phrase("Hello, world!").letters() === "Helloworld"
+  this.letters = function letters() {
+    return (this.content.match(/[a-z]/gi) || []).join("");
   }
 
   // パリンドロームならtrueを、違うならfalseを返す
